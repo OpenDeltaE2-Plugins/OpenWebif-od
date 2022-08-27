@@ -1,0 +1,384 @@
+#from Plugins.Extensions.OpenWebif.controllers.i18n import tstrings
+<!-- box_info -->
+<div id="content_main" class="ui-widget-content">
+	<div id="info">
+		<h3 class="ui-widget-header">$tstrings['box_info']</h3>
+		<hr />
+		<img src="images/boxes/${boximage}" id="box_image" alt="box_info">
+		<hr />
+		<br/>
+		<table width="100%">
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['box']</th>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['model']:</td>
+							<td class="inforight">$model</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['displaymodel']:</td>
+							<td class="inforight">$displaymodel</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['platform']:</td>
+							<td class="inforight">$platform</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['procmodel']:</td>
+							<td class="inforight">$procmodel</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['procmodeltype']:</td>
+							<td class="inforight">$procmodeltype</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['hwserial']:</td>
+							<td class="inforight">$hwserial</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['brand']:</td>
+							<td class="inforight">$brand</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['displaybrand']:</td>
+							<td class="inforight">$displaybrand</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['chipset']:</td>
+							<td class="inforight">$chipset</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['fp_version']:</td>
+							<td class="inforight">$fp_version</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['cpu_brand']:</td>
+							<td class="inforight">$cpubrand</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['soc_family']:</td>
+							<td class="inforight">$socfamily</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['cpu_arch']:</td>
+							<td class="inforight">$cpuarch</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['cpu_benchmark']:</td>
+							<td class="inforight">$cpubenchmark</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['displaytype']:</td>
+							<td class="inforight">$displaytype</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['main_memory']:</td>
+							<td class="inforight">$mem3</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['ram_benchmark']:</td>
+							<td class="inforight">$rambenchmark</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['box_uptime']:</td>
+							<td class="inforight">$uptime</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['software']</th>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['oe_version']:</td>
+							<td class="inforight">$oever</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['gcc_version']:</td>
+							<td class="inforight">$gccver</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['glibc_version']:</td>
+							<td class="inforight">$glibcver</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['binutils_version']:</td>
+							<td class="inforight">$binutilsver</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['openssl']:</td>
+							<td class="inforight">$openssl</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['firmware_version']:</td>
+							<td class="inforight">$imagedistro</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['enigmaver']:</td>
+							<td class="inforight">$enigmaver</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['enigmarev']:</td>
+							<td class="inforight">$enigmarev</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['updatedatestring']:</td>
+							<td class="inforight">$updatedatestring</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['enigmadebuglvl']:</td>
+							<td class="inforight">$enigmadebuglvl</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['driver_date']:</td>
+							<td class="inforight">$driverdate</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['kernel_version']:</td>
+							<td class="inforight">$kernelver</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['modulelayout']:</td>
+							<td class="inforight">$modulelayout</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['python_version']:</td>
+							<td class="inforight">$pythonversion</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['gstreamer_version']:</td>
+							<td class="inforight">$gstreamerversion</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['ffmpeg_version']:</td>
+							<td class="inforight">$ffmpegversion</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['openvision']</th>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['vision_version']:</td>
+							<td class="inforight">$visionversion</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['vision_revision']:</td>
+							<td class="inforight">$visionrevision</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['vision_type']:</td>
+							<td class="inforight">$visiontype</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['vision_module']:</td>
+							<td class="inforight">$visionmodule</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['multiboot']:</td>
+							<td class="inforight">$multiboot</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['flash_type']:</td>
+							<td class="inforight">$flashtype</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['boxrctype']:</td>
+							<td class="inforight">$boxrctype</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['ovrctype']:</td>
+							<td class="inforight">$ovrctype</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['ovrcname']:</td>
+							<td class="inforight">$ovrcname</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['ovrcidnum']:</td>
+							<td class="inforight">$ovrcidnum</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['imagearch']:</td>
+							<td class="inforight">$imagearch</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['imagefolder']:</td>
+							<td class="inforight">$imagefolder</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['imagefilesystem']:</td>
+							<td class="inforight">$imagefilesystem</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['feedsurl']:</td>
+							<td class="inforight">$feedsurl</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['developername']:</td>
+							<td class="inforight">$developername</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['imagefpu']:</td>
+							<td class="inforight">$imagefpu</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['havemultilib']:</td>
+							<td class="inforight">$havemultilib</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['dvb']</th>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['dvbapi_type']:</td>
+							<td class="inforight">$dvbapitype</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['transcoding']:</td>
+							<td class="inforight">$transcoding</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['multitranscoding']:</td>
+							<td class="inforight">$multitranscoding</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['tuners']</th>
+						</tr>
+						#for $tuner in $tuners
+						<tr>
+							<td class="infoleft" style="vertical-align:text-top;">$tuner.name</td>
+							<td class="inforight">
+								$tuner.type<br>
+									#if $tuner.live != ''
+										<div class='tled-box'><div class='tled green'></div></div>$tuner.live<br>
+									#end if
+									#if $tuner.rec != ''
+										<div class='tled-box'><div class='tled red'></div></div>$tuner.rec<br>
+									#end if
+							</div>
+							</td>
+						</tr>
+						#end for
+						#if $EX != ''
+						<tr><td colspan="2">$EX</td></tr>
+						#end if
+<!--					<tr><td colspan="2">
+						<div class='tled-box'><div class='tled black'></div></div>free
+						<div class='tled-box'><div class='tled green'></div></div>Live
+						<div class='tled-box'><div class='tled red'></div></div>Record or Stream
+						<div class='tled-box'><div class='tled orange'></div></div>Record or Stream and Live
+						</td></tr>-->
+					</table>
+				</td>
+			</tr>
+			#if $len($streams) > 0
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['streamclients']</th>
+						</tr>
+						#for $stream in $streams
+						<tr>
+							<td class="infoleft" style="vertical-align:text-top;">$stream.ip</td>
+							<td class="inforight">
+									#if $stream.type == 'T'
+										$stream.name / ($tstrings['transcoded'])
+									#else
+										$stream.name
+									#end if
+							</div>
+							</td>
+						</tr>
+						#end for
+					</table>
+				</td>
+			</tr>
+			#end if
+			#for $hd in $hdd
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['hdd_model']: $hd.model</th>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['capacity']:</td>
+							<td class="inforight">$hd.friendlycapacity ($hd.mount)</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			#end for
+			#if $shares
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['networkshares']:</th>
+						</tr>
+						#for $share in $shares
+						<tr>
+							<td class="infoleft">$share.name:</td>
+							<td class="inforight">$share.type $tstrings['using'] $share.method: $share.path ($share.friendlyaddress)</td>
+						</tr>
+						#end for
+					</table>
+				</td>
+			</tr>
+			#end if
+			#for $iface in $ifaces
+			<tr>
+				<td width="100%">
+					<table cellspacing="0" class="infomain ui-widget-content" >
+						<tr>
+							<th colspan="2" class="ui-widget-header">$tstrings['network_interface']: $iface.name ($iface.friendlynic)</th>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['linkspeed']:</td>
+							<td class="inforight">$iface.linkspeed</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['mac_address']:</td>
+							<td class="inforight">$iface.mac</td>
+						</tr>
+						<tr>
+							<td class="infoleft">$tstrings['ipv6_address']:</td>
+							<td class="inforight">$iface.ipv6 ($iface.ipmethod)</td>
+						</tr>
+						#if $iface.ip != "0.0.0.0"
+							<tr>
+								<td class="infoleft">$tstrings['ipv4_address']:</td>
+								<td class="inforight">$iface.ip/$iface.v4prefix $tstrings['via'] $iface.gw ($iface.ipv4method)</td>
+							</tr>
+						#end if
+					</table>
+				</td>
+			</tr>
+			#end for
+		</table>
+	</div>
+</div>	
+<!-- /box_info -->
